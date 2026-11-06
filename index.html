@@ -72,13 +72,21 @@
                     </ol>
                 </div>
             </div>
-
-            <!-- YouTube音源（動画）埋め込み部分 -->
-            <div class="video-container">
-                <iframe src="https://www.youtube.com/watch?v=PSTbi74TtR8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-            </div>
-
         </div>
-    </div>
+
+         <!-- 画面には表示されない音声タグ（ループ再生） -->
+    <audio id="bgm" class="hidden-audio" src="bgm.mp3" loop></audio>
+
+        <script>
+        // ユーザーが画面のどこかを1回クリックしたら、裏でBGMを再生する
+        document.addEventListener('click', function() {
+            const audio = document.getElementById('bgm');
+            if (audio.paused) {
+                audio.play().catch(function(error) {
+                    console.log("自動再生がブロックされました:", error);
+                });
+            }
+        }, { once: true }); // 最初の1回だけ実行
+    </script>
 </body>
 </html>
