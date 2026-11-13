@@ -1,94 +1,128 @@
 <!doctype html>
 <html lang="ja">
-<head>
+  <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <title>ChipC0aメンバー紹介</title>
     <style>
-        body {
-            /* 縦方向に「薄い青」から「薄いピンク」へ変化する2色のグラデーション */
-            background: linear-gradient(180deg, #e0c3fc 0%, #8ec5fc 100%);
-            /* 画面全体にグラデーションを広げるための設定 */
-            min-height: 100vh;
-            color: #333333;
-        }
-        .container {
-            margin-top: 60px;
-            max-width: 600px;
-        }
-        .content-card {
-            background-color: white;
-            padding: 40px;
-            border-radius: 12px;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.05);
-        }
-        ol {
-            padding-left: 20px;
-            display: inline-block;
-            text-align: left;
-        }
-        li {
-            margin-bottom: 12px;
-            font-size: 1.1rem;
-        }
-        /* YouTubeプレイヤーを囲むレスポンシブ用の設定 */
-        .video-container {
-            position: relative;
-            padding-bottom: 56.25%; /* 16:9 の比率 */
-            height: 0;
-            overflow: hidden;
-            max-width: 100%;
-            margin-top: 20px;
-            border-radius: 8px;
-        }
-        .video-container iframe {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-        }
+      body {
+        /* 縦方向に「薄い青」から「薄いピンク」へ変化する2色のグラデーション */
+        background: linear-gradient(180deg, #e0c3fc 0%, #8ec5fc 100%);
+        /* 画面全体にグラデーションを広げるための設定 */
+        min-height: 100vh;
+        color: #333333;
+      }
+      .container {
+        margin-top: 60px;
+        max-width: 600px;
+      }
+      .content-card {
+        background-color: white;
+        padding: 40px;
+        border-radius: 12px;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+      }
+      ol {
+        padding-left: 20px;
+        display: inline-block;
+        text-align: left;
+      }
+      li {
+        margin-bottom: 12px;
+        font-size: 1.1rem;
+      }
+      /* YouTubeプレイヤーを囲むレスポンシブ用の設定 */
+      .video-container {
+        position: relative;
+        padding-bottom: 56.25%; /* 16:9 の比率 */
+        height: 0;
+        overflow: hidden;
+        max-width: 100%;
+        margin-top: 20px;
+        border-radius: 8px;
+      }
+      .video-container iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+      }
     </style>
-</head>
-<body>
+  </head>
+  <body>
     <div class="container">
-        <div class="content-card text-center">
-            <h1 class="h3 font-weight-bold mb-4">ChipC0aメンバー紹介</h1>
-            
-            <div class="mb-4">
-                <h2 class="h5 text-muted mb-3">ー メンバー一覧 ー</h2>
-                <p class="h5 text-muted mb-3">ー メンバーが変わることがあります ー</p>
-                
-                <div class="text-center">
-                    <ol>
-                        <li><a href="torotsuna.html">とろつな。</a></li>
-                        <li><a href="kurodai.html">kusodai</a></li>
-                        <li><a href="magao.html">まがお</a></li>
-                        <li><a href="sushi.html">sushi</a></li>
-                        <li><a href="maru.html">maru</a></li>
-                        <li><a href="raru.html">らるまる</a></li>
-                        <li><a href="okayu.html">ｻｶﾅ</a></li>
-                        <li><a href="ame.html">霜雨</a></li>
-                        <li><a href="NOa.html">ノア</a></li>
-                    </ol>
-                </div>
-            </div>
+      <div class="content-card text-center">
+        <h1 class="h3 font-weight-bold mb-4">ChipC0aメンバー紹介</h1>
+
+        <div class="mb-4">
+          <h2 class="h5 text-muted mb-3">ー メンバー一覧 ー</h2>
+          <p class="h5 text-muted mb-3">ー メンバーが変わることがあります ー</p>
+          <div class="text-center">
+            <ol>
+              <li><a href="torotsuna.html">とろつな。</a></li>
+              <li><a href="kurodai.html">kusodai</a></li>
+              <li><a href="magao.html">まがお</a></li>
+              <li><a href="sushi.html">sushi</a></li>
+              <li><a href="maru.html">maru</a></li>
+              <li><a href="raru.html">らるまる</a></li>
+              <li><a href="okayu.html">ｻｶﾅ</a></li>
+              <li><a href="ame.html">霜雨</a></li>
+              <li><a href="NOa.html">ノア</a></li>
+            </ol>
+          </div>
         </div>
+      </div>
+    </div>
 
-         <!-- 画面には表示されない音声タグ（ループ再生） -->
-    <audio id="bgm" class="hidden-audio" src="bgm.mp3" loop></audio>
+    <!-- 通常BGM（ループ再生） -->
+    <audio id="bgm" src="bgm.mp3" loop></audio>
+    <!-- リンククリック時の効果音・BGM2 -->
+    <audio id="bgm2" src="BGM2.mp3"></audio>
 
-        <script>
-        // ユーザーが画面のどこかを1回クリックしたら、裏でBGMを再生する
-        document.addEventListener('click', function() {
-            const audio = document.getElementById('bgm');
-            if (audio.paused) {
-                audio.play().catch(function(error) {
-                    console.log("自動再生がブロックされました:", error);
-                });
-            }
-        }, { once: true }); // 最初の1回だけ実行
+    <script>
+      const bgm = document.getElementById('bgm');
+      const bgm2 = document.getElementById('bgm2');
+      let isNavigating = false; // 連続クリック防止用フラグ
+
+      // 1. ユーザーが画面のどこかを1回クリックしたら、裏でbgm.mp3を再生する
+      document.addEventListener('click', function(event) {
+        // リンク以外の場所をクリックした時だけ通常BGMを開始
+        if (!event.target.closest('a') && bgm.paused && !isNavigating) {
+          bgm.play().catch(function(error) {
+            console.log("自動再生がブロックされました:", error);
+          });
+        }
+      }, { once: true });
+
+      // 2. メンバーのリンク（aタグ）を押したときの処理
+      const links = document.querySelectorAll('ol a');
+      links.forEach(function(link) {
+        link.addEventListener('click', function(event) {
+          event.preventDefault(); // すぐにページ移動するのを防ぐ
+          if (isNavigating) return;
+          isNavigating = true;
+
+          const targetUrl = this.href; // 移動先のURLを取得
+
+          // 流れていたbgm.mp3を停止する
+          bgm.pause();
+
+          // BGM2.mp3を最初から再生する
+          bgm2.currentTime = 0;
+          bgm2.play().then(function() {
+            // 1秒（1000ミリ秒）待ってからリンク先へ移動する
+            setTimeout(function() {
+              window.location.href = targetUrl;
+            }, 1000);
+          }).catch(function(error) {
+            // 音声エラー時は待たずにすぐ移動する
+            console.log("BGM2の再生に失敗しました:", error);
+            window.location.href = targetUrl;
+          });
+        });
+      });
     </script>
-</body>
+  </body>
 </html>
